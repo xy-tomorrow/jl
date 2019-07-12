@@ -268,6 +268,7 @@ font-size: 14px;
 }
 .details{
     margin-top:30px; 
+    
 }
 .details li{
     font-size: 14px;
@@ -286,6 +287,75 @@ font-size: 14px;
     line-height: 30px;
     color: #3a3f4a;
 }
+.t_imgs{
+   text-align: center;
+   margin-top:100px; 
+}
+.remark{
+    text-align: center;
+    margin-top:30px; 
+}
+.remark i{
+    display: inline-block;
+    margin: -5px 10px 0 5px;
+    width: 148px;
+    height: 24px;
+    vertical-align: middle;
+    background-image: url("../img/ico-detail.png");
+    background-repeat: no-repeat;
+    background-position: -156px -152px;
+}
+.remark span:first-child{
+    line-height: 25px;
+    font-size: 18px;
+    color: #333;
+}
+.remark span:nth-child(3){
+    font-size: 28px;
+    color: #ffca11;
+}
+.none{
+    display: none;
+}
+.merchant p{
+    margin-top:10px; 
+    font-size: 14px;
+    color: #1e1e1e;
+}
+.merchant p:nth-child(2)~p{
+    color:#777
+}
+.merchant p:first-child i,.merchant p:nth-child(2) i{
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-right:5px ;
+    background-image: url("../img/contact.png");
+    background-repeat: no-repeat;
+}
+.merchant p:nth-child(2) i{
+    background-position: 0 -16px;
+}
+.merchant p:nth-child(6) a{
+    display: block;
+    width: 65px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ededed;
+    border-radius: 2px;
+    color: #777;
+    padding-left: 28px;
+    background: url(../img/icon-qq.png) 8px center no-repeat;
+    
+}
+/* .merchant p:nth-child(6) i{
+    display: inline-block;
+    background: url(../img/icon-qq.png) 8px center no-repeat;
+} */
+.fixed{
+    position: fixed
+}
+
 
 
 
