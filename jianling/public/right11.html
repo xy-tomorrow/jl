@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        .all {
+            width: 500px;
+            height: 200px;
+            padding: 7px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .screen {
+            width: 500px;
+            height: 200px;
+            /*overflow: hidden;*/
+            position: relative;
+        }
+
+        .screen li {
+            overflow: hidden;
+            float: left;
+            width: 130px;
+            height: 170px;
+            margin-right: 20px;
+        }
+
+        .screen ul {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 3000px;
+        }
+
+        .all ol {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .all ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .all ol li.current {
+            background: yellow;
+        }
+
+        #arr {
+            display: none;
+        }
+
+        #arr span {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #000;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="all" id='box'>
+    <div class="screen">
+        <ul class="right11-bottom-ul clearfix" id='uls'>
+            <li>
+                <img src="img/index/vpic_1.jpg" alt=""/>
+                <p>开放测全新版本</p>
+                <span>2013.11</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_2.jpg" alt=""/>
+                <p>火炮兰巨星登场</p>
+                <span>2014.1</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_3.jpg" alt=""/>
+                <p>躁动荷尔蒙激情擂台</p>
+                <span>2014.3</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_4.jpg" alt=""/>
+                <p>绿色毒风暴</p>
+                <span>2014.4</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_5.jpg" alt=""/>
+                <p>首部资料片刺金传说</p>
+                <span>2014.5</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_6.jpg" alt=""/>
+                <p>白青公测</p>
+                <span>2014.8</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_7.jpg" alt=""/>
+                <p>战至狂欢</p>
+                <span>2014.10</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_8.jpg" alt=""/>
+                <p>1ST灵芝派对</p>
+                <span>2014.11</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_9.jpg" alt=""/>
+                <p>咒术师登场</p>
+                <span>2015.1</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_10.jpg" alt=""/>
+                <p>夜幕下的风之平原</p>
+                <span>2015.3</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_11.jpg" alt=""/>
+                <p>晴</p>
+                <span>2015.4</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_12.jpg" alt=""/>
+                <p>风</p>
+                <span>2015.5</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_13.jpg" alt=""/>
+                <p>万物有灵</p>
+                <span>2015.6</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_14.jpg" alt=""/>
+                <p>伴你同行</p>
+                <span>2015.08</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_15.jpg" alt=""/>
+                <p>一战破天</p>
+                <span>2015.09</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_16.jpg" alt=""/>
+                <p>2周年灵芝趴</p>
+                <span>2015.11</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_17.jpg" alt=""/>
+                <p>继承者之战</p>
+                <span>2016.1</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_18.jpg" alt=""/>
+                <p>无尽挑战</p>
+                <span>2016.2</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_19.jpg" alt=""/>
+                <p>混合理论</p>
+                <span>2016.4</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_20.jpg" alt=""/>
+                <p>天空纪元</p>
+                <span>2016.6</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_21.jpg" alt=""/>
+                <p>全民海趴</p>
+                <span>2016.7</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_22.jpg" alt=""/>
+                <p>花与魔</p>
+                <span>2016.8</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_23.jpg" alt=""/>
+                <p>决战前夕</p>
+                <span>2016.9</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_24.jpg" alt=""/>
+                <p>女王的抉择</p>
+                <span>2016.10</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_25.jpg" alt=""/>
+                <p>3RD灵芝趴</p>
+                <span>2016.11</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_26.jpg" alt=""/>
+                <p>璀璨</p>
+                <span>2016.12</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_27.jpg" alt=""/>
+                <p>西洛，西洛</p>
+                <span>2017.1</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_28.jpg" alt=""/>
+                <p>甜蜜新篇</p>
+                <span>2017.2</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_29.jpg" alt=""/>
+                <p>纯白色的恋歌</p>
+                <span>2017.3</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_30.jpg" alt=""/>
+                <p>四月新篇 怼起！</p>
+                <span>2017.4</span>
+            </li>
+            <li>
+                <img src="img/index/vpic_plus.jpg" alt=""/>
+                <p>敬请期待</p>
+                <span>2017.5</span>
+            </li>
+        </ul>
+    </div>
+    <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+</div>
+<script>
+    var timer = null;
+    //需求 实现一个 完整的轮播图
+    //找人
+    var box = document.getElementById("box");
+    var screen = box.children[0];
+    var ul = screen.children[0];
+    var ol = screen.children[1];
+    var ulLis = ul.children;//所有的广告
+    var imgWidth = screen.offsetWidth;
+    //alert(imgWidth);
+    //箭头
+    var arr = document.getElementById("arr");
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+    //1.动态生成结构
+    //1.1根据图片数量动态生成按钮
+
+    //3.鼠标点击箭头
+    //3.1鼠标经过盒子 显示箭头 鼠标离开盒子 隐藏箭头
+    box.onmouseover = function () {
+        arr.style.display = "block";//显示箭头
+        clearInterval(timer);//停止自动播放
+    };
+    box.onmouseout = function () {
+        arr.style.display = "none";//隐藏箭头
+        timer = setInterval(right.onclick, 1000);//从新自动播放
+    };
+    //3.2点击右箭头 以动画的形式把ul移动到指定的位置
+    var pic = 0;//记录当前正在显示的图片的索引
+    right.onclick = function () {
+        //先判断 如果是最后一个图片 先让ul瞬间跳会开始位置 然后索引也要归零
+        if (pic === ulLis.length - 1) {
+            ul.style.left = 0 + "px";
+            pic = 0;//索引也要归零
+        }
+        pic++;//计算出将要显示的图片的索引
+        //目标 和pic有关 和 图片宽度有关 而且是负数
+        var target = -pic * imgWidth;
+        animate(ul, target);
+        //按钮也要跟着走
+    }
+    left.onclick = function () {
+        //先判断 如果是第一个图片 先让ul瞬间跳到最后的位置 然后索引也要到最后
+        if (pic === 0) {
+            ul.style.left = -(ulLis.length - 1) * imgWidth + "px";
+            pic = ulLis.length - 1;//索引也要归零
+        }
+        pic--;//计算出将要显示的图片的索引
+        //目标 和pic有关 和 图片宽度有关 而且是负数
+        var target = -pic * imgWidth;
+        animate(ul, target);
+        //按钮也要跟着走
+    }
+
+    timer = setInterval(right.onclick, 1000);//自动播放
+
+    function animate(obj, target) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            var leader = obj.offsetLeft;
+            var step = 30;
+            step = leader < target ? step : -step;//step有了正负
+            if (Math.abs(leader - target) >= Math.abs(step)) {
+                leader = leader + step;
+                obj.style.left = leader + "px";
+            } else {
+                obj.style.left = target + "px";//手动放到终点
+                clearInterval(obj.timer);
+            }
+        }, 15);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.footer {
+    width: 1349px;
+    height: 128px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #20222C;
+}
+.footer-logo {
+    width: 315px;
+    height: 85px;
+    display: inline-block;
+    float: left;
+    margin-left: 110px;
+}
+.footer-nav {
+    float: left;
+}
+.footer-nav p,a {
+    color: #485D68;
+    word-spacing:5px;
+    height: 25px;
+}
+.footer-nav .nav-p {
+    color: #4C4C4C;
+    background-color: #202020;
+    line-height:25px ;
+}

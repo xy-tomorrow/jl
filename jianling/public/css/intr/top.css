@@ -1,0 +1,84 @@
+.top {
+    height: 40px;
+    background:url("../../img/intr/top.jpg");
+    line-height: 40px;
+}
+.topl{
+    float: left;
+    margin-left: 190px;
+    height: 40px;
+}
+.a1 {
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    background:url("../../img/intr/top.jpg")  0px -42px;
+}
+.a2 {
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    background:url("../../img/intr/top.jpg")  0px -84px;
+}
+.topr {
+    float: right;
+    margin-right: 190px;
+}
+span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.a3 {
+    display: inline-block;
+    width: 78px;
+    height: 40px;
+    padding-left: 20px;
+    background:url("../../img/intr/top.jpg")  0px -126px;
+}
+header{
+    position:relative;
+    width:100%;
+    height:74px;
+    background-color:#262626 !important;
+    
+}
+.logo{
+    float:left;
+    width:241px;
+    height:74px;
+    background:url("../../img/intr/logo.png") center center no-repeat;
+    text-indent:-9999em;
+}
+.nav{
+    height:74px;
+    padding-left:270px;
+    *padding-left:25px;
+    line-height:74px;
+}
+.nav_t{
+    float:left;
+    padding:0 19px;
+    color:#787878;
+    font-size:16px;
+}
+.nav_t:hover,.nav_t_cur{
+    color:#fff;
+}
+.nav_arrow{
+    display:inline-block;
+    float:left;
+    width:7px;
+    height:9px;
+    margin-top:32px;
+    background:url("../../img/intr/nav_arrow.png") no-repeat;
+    overflow:hidden;
+}
+.arrow{
+    position:absolute;
+    bottom:-13px;
+    left:302px;
+    width:33px;
+    height:13px;
+    z-index:1;
+    background:url("../../img/intr/arrow.png") no-repeat;
+ }

@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1366px;
+}
+.top {
+    height: 40px;
+    background:url("../../img/index/top.jpg");
+    line-height: 40px;
+}
+.topl{
+    float: left;
+    margin-left: 190px;
+    height: 40px;
+}
+.a1 {
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    background:url("../../img/index/top.jpg")  0px -42px;
+}
+.a2 {
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    background:url("../../img/index/top.jpg")  0px -84px;
+}
+.topr {
+    float: right;
+    margin-right: 190px;
+}
+span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.a3 {
+    display: inline-block;
+    width: 78px;
+    height: 40px;
+    padding-left: 20px;
+    background:url("../../img/index/top.jpg")  0px -126px;
+}
+/*�м䲿��*/
+/*�в���࿪ʼ��*/
+.left{
+    width: 304px;
+    height: 2014px;
+    float: left;
+    background: url("../../img/index/leftbg.jpg")  top right;
+}
+.leftZ {
+    width: 192px;
+    height: 2014px;
+    float: right;
+    overflow: hidden;
+}
+.leftZ-1{
+    width: 192px;
+    height: 144px;
+    display: block;
+}
+.leftZ-2 {
+    width: 192px;
+    height: 208px;
+    background-color: #D25D1E;
+}
+.leftZ-21 {
+    width: 192px;
+    height: 20px;
+    display: block;;
+    background: url("../../img/index/spr.png");
+}
+.leftZ-22 {
+    width: 192px;
+    height: 20px;
+    display: block;
+}
+.leftZ-23 {
+    width: 192px;
+    height: 103px;
+    display: block;
+    background: url("../../img/index/spr.png") 0 -147px;
+}
+.leftZ-24 {
+    width: 192px;
+    display: block;
+    height: 58px;
+    background: url("../../img/index/spr.png") 0 -250px;
+}
+.leftZ-3{
+    width: 192px;
+    height: 96px;
+    padding-top: 18px;
+    background-color: #F2782F;
+    border-bottom: 3px solid #D25D1E;
+}
+.leftZ-31 {
+    width: 43px;
+    height: 37px;
+    display: block;
+    margin-left : 76px;
+    margin-right : 73px;
+    background: url("../../img/index/spr.png") -103px -310px;
+}
+.leftZ-32 {
+    line-height: 50px;
+    display: block;
+    color: #36313F;
+    font-size: 16px;
+    text-align: center;
+}
+.leftZ-41,.leftZ-42,.leftZ-43,.leftZ-44 {
+    height: 86px;
+    width: 192px;
+    background-color: #383240;
+    border-bottom: 1px solid #3D3747;
+}
+.leftZ-4 i {
+    width: 50px;
+    height: 50px;
+    margin:23px 0 0 23px;
+    display: inline-block;
+    background: url("../../img/index/spr.png") -3px -309px;
+    float: left;
+}
+.leftZ-4 span {
+    line-height: 86px;
+    display: inline-block;
+    font-size: 16px;
+    color: #899DCD;
+}
+.leftZ-42 i {
+    background: url("../../img/index/spr.png") -54px -309px;
+}
+.leftZ-43 i {
+    background: url("../../img/index/spr.png") -156px -308px;
+}
+.leftZ-44 i {
+    background: url("../../img/index/spr.png") -154px -358px;
+}
+.leftZ-5 a{
+    float: left;
+    width: 95px;
+    height: 100px;
+    display: inline-block;
+    background-color: #37313F;
+    border-right: 1px solid #3D3747;
+    border-bottom: 1px solid #3D3747;
+}
+.leftZ-51 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 13px 22.5px 0 22.5px;
+    background: url("../../img/index/spr.png") -5px -358px;
+}
+.leftZ-52 {
+    width: 95px;
+    display: inline-block;
+    font-size: 14px;
+    color: #749DB2;
+    text-align: center;
+}
+.leftZ-6 ul {
+    width: 167px;
+    height: 167px;
+    padding: 25px 0 0 25px;
+    display:block;
+    background-color: #2F2937;
+}
+.leftZ-6 li {
+    width: 36px;
+    height: 36px;
+    margin : 0 17px 21px 0;
+    float: left;
+}
+.leftZ-61 {
+    background: url("../../img/index/spr.png") -1px -456px;
+}
+.leftZ-62 {
+    background: url("../../img/index/spr.png") -38px -490px;
+}
+.leftZ-63 {
+    background: url("../../img/index/spr.png") -70px -490px;
+}
+.leftZ-64 {
+    background: url("../../img/index/spr.png") -105px -457px;
+}
+.leftZ-65 {
+    background: url("../../img/index/spr.png") -138px -458px;
+}
+.leftZ-66 {
+    background: url("../../img/index/spr.png") -2px -492px;
+}
+.leftZ-67 {
+    background: url("../../img/index/spr.png") -36px -460px;
+}
+.leftZ-68 {
+    background: url("../../img/index/spr.png") -70px -459px;
+}
+.leftZ-69 {
+    background: url("../../img/index/spr.png") -106px -492px;
+}
+.leftZ-7 {
+    width: 180px;
+    height: 24px;
+    border: 6px solid #3A3543;
+    background-color: #2F2937;
+}
+.leftZ-7 a {
+    font-size: 12px;
+    color: #C25122;
+    margin-left: 20px;
+}
+
+.leftZ-7 span {
+    float: right;
+    width: 12px;
+    height: 7px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background: url("../../img/index/spr.png") -191px 0;
+}
+.leftZ-7ul {
+    display: none;
+    border: 6px solid #3A3543;
+}
+.leftZ-7ul li {
+    height: 29px;
+    line-height: 23px;
+    color: #3bc4be;
+    font-family: '\5b8b\4f53',tahoma;
+    text-indent: 21px;
+    background-color: #246C92;
+    border-bottom: 1px dashed #3bc4be;
+
+}
+.leftZ h2 {
+    font-size: 16px;
+    color: #C25521;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+.leftZ p {
+    margin-left: 25px;
+    margin-bottom: 5px;
+    color: #465559;
+    font-size: 12px;
+}
+.leftZ p em {
+    color: #8F97B4;
+    margin-right: 10px ;
+}
+.leftZ .pp {
+    margin-left: 60px;
+}

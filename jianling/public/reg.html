@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            width:1000px;
+            background:url("img/reg.jpg") no-repeat;
+            background-size: 100%;
+           
+        }
+        .container{
+            position:relative;
+            margin:0 auto;
+            margin-top:80px;
+            width:710px;
+            height:500px;
+            border:1px solid rgba(29,29,29,0.64);
+            background:url("img/reg.jpg") no-repeat;
+            background-size:100%;
+            left:45%;
+            margin-top:200px;
+        }
+        .photo{
+            position: absolute;
+            z-index: 1;
+            width:710px;
+            height:500px;
+            background:rgba(100,100,50,0.51);
+           
+        }
+        .reg{
+            margin-top:20px;
+            position:absolute;
+            z-index:2;
+            margin-left:150px;
+        }
+        li{
+            position:relative;
+            padding-left:20px;
+            list-style:none;
+            line-height:70px;
+            width:400px;
+            border:1px solid white;
+            margin:5px auto
+        }
+        li input[class=txt]{
+            padding-left:20px;
+            border-style:none;
+            background:none;
+        }
+        li input[type=text]{
+            padding-left:10px;
+            border-style:none;
+            background:none;
+            line-height: 40px;
+        }
+        li input[type=button]{
+            height:50px;
+            width:90px;
+            background-color:darkolivegreen
+        }
+        input[type=submit]{
+            margin-left: 150px;
+            border-style:none;
+            font-size:25px;
+            color:white;
+            background:none;
+        }
+        
+        .d{
+            background-color:rgba(11,53,3,0.51);
+        }
+        .txt{
+            line-height:50px;
+            width:280px;
+            font-size:15px;
+            color:white;
+        }
+        .error{
+            position:absolute;
+            z-index: 2;
+            left:150px;
+            color:rgba(253,253,253,0.4);
+            font-size:14px;
+        }
+        #code  
+            {  
+                width:100px;
+                height:50px;
+                font-size:20px;
+                font-family:Arial;  
+                font-style:italic;  
+                font-weight:bold;  
+                border:0;  
+                letter-spacing:2px;  
+                color:blue;  
+            }  
+           
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="photo"></div>
+        <div class="reg">
+            <form name="form">
+                <ul>
+                    <li> 
+                        <label style="color:white">用户名:</label> 
+                        <input type="text" name="uname" id="uname" class="txt" placeholder="请输入用户名"> </li>
+                    <li>
+                        <label style="color:white">密码</label> 
+                        <input type="password" name="upwd" id="upwd" class="txt" placeholder="请输入密码"> </li>
+                    <li> 
+                        <label style="color:white">确认密码</label> 
+                        <input type="password" name="upwd" class="txt" placeholder="请确认密码"> </li>
+                    <li> 
+                        <label style="color:white">电话号码</label> 
+                        <input type="text" name="phone" id="phone" class="txt" placeholder="请输入手机号">
+                    </li>
+                    <li> 
+                            <input type = "text"  id = "input"/>  
+                            <input type = "button" id="code" onclick="createCode()"/>  
+                            <input type = "button" value = "验证" onclick = "validate()"/>  
+                        </li>
+                        <li id="btn" class="d"> <input id="sub" type="submit" value="注册" > </li>
+            </ul>
+        </form>
+            </div>
+        </div> 
+    </div>   
+</canvas>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/reg.js"></script> 
+    <script>
+
+        var sub=document.getElementById("sub");
+        var txt=document.getElementsByClassName("txt");
+        var li=document.getElementsByTagName("li");
+        document.forms.form.onsubmit=function(){
+            test();
+            var err1=document.getElementsByClassName("error").length;
+            if(!err1){
+                return true;
+            }
+            return false;
+        };
+        function  test(){
+            for(var i=0;i<txt.length;i++){
+                txt[i].focus();
+            }
+                sub.focus();
+        }
+        for(var i=0;i<txt.length;i++){
+            txt[i].index=i;
+            txt[i].onfocus=function(){
+                if(this.parentElement.children[2]==undefined) 
+                return;
+                this.parentElement.children[2].remove();
+            };
+            txt[i].onblur=function(){
+                switch(this.index){
+                    case 0:
+                        if(this.value==""){
+                            var s=document.createElement("span");
+                            s.innerHTML="请输入用户名";
+                            s.className="error";
+                            li[this.index].appendChild(s)
+                        }
+                        else{
+                            var s=document.createElement("span");
+                            s.innerHTML="";
+                            s.className="sucess";
+                            li[this.index].appendChild(s)
+                        }
+                        break;
+                    case 1:
+                    if(this.value==""){
+                        var s=document.createElement("span");
+                        s.innerHTML="请输入密码";
+                        s.className="error";
+                        li[this.index].appendChild(s)
+                    }
+                    else if(this.value.length<6||this.value.length>11){
+                        var s=document.createElement("span");
+                        s.innerHTML="密码错误";
+                        s.className="error";
+                        li[this.index].appendChild(s);
+                        txt[this.index].value="";
+                    }
+                    else{
+                        var s=document.createElement("span");
+                        s.innerHTML="";
+                        s.className="sucess";
+                        li[this.index].appendChild(s)
+                    }
+                    break;
+                case 2:
+                    if(this.value==""){
+                        var s=document.createElement("span");
+                        s.innerHTML="请再次确认密码";
+                        s.className="error";
+                        li[this.index].appendChild(s);
+                        txt[this.index].value="";
+                    }
+                    else if(this.value!=txt[1].value){
+                        var s=document.createElement("span");
+                        s.innerHTML="请重新输入";
+                        s.className="error";
+                        li[this.index].appendChild(s);
+                        txt[this.index].value="";
+                    }
+                    else{
+                        var s=document.createElement("span");
+                        s.innerHTML="";
+                        s.className="sucess";
+                        li[this.index].appendChild(s)
+                    }
+                    break;
+                case 3:
+                    if(this.value==""){
+                        var s=document.createElement("span");
+                        s.innerHTML="请输入号码";
+                        s.className="error";
+                        li[this.index].appendChild(s);
+                        txt[this.index].value="";
+                    }
+                    else if(this.value.length!=11){
+                        var s=document.createElement("span");
+                        s.innerHTML="号码格式错误";
+                        s.className="error";
+                        li[this.index].appendChild(s)
+                        txt[this.index].value="";
+                    }
+                    else{
+                        var s=document.createElement("span");
+                        s.innerHTML="";
+                        s.className="sucess";
+                        li[this.index].appendChild(s)
+                    }
+                    break;
+                case 4:
+                if(this.value==""){
+                var s=document.createElement("span");
+                s.innerHTML="请输入邮箱";
+                s.className="error";
+                li[this.index].appendChild(s)
+            }
+            else{
+                var s=document.createElement("span");
+                s.innerHTML="";
+                s.className="sucess";
+                li[this.index].appendChild(s)
+            }
+            break;
+                    
+                }
+            }
+        }
+
+//以下是验证码生成验证部分
+        var code ; //在全局定义验证码   
+//产生验证码  
+window.onload = createCode();
+function createCode(){  
+     code = "";   
+     var codeLength = 4;//验证码的长度  
+     var checkCode = document.getElementById("code");   
+     var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',  
+     'S','T','U','V','W','X','Y','Z');//随机数  
+     for(var i = 0; i < codeLength; i++) {//循环操作  
+        var index = Math.floor(Math.random()*36);//取得随机数的索引（0~35）  
+        code += random[index];//根据索引取得随机数加到code上  
+    }  
+    checkCode.value = code;//把code值赋给验证码  
+}  
+//校验验证码  
+function validate(){  
+    var inputCode = document.getElementById("input").value.toUpperCase(); //取得输入的验证码并转化为大写        
+    if(inputCode.length <= 0) { //若输入的验证码长度为0  
+        alert("请输入验证码！"); //则弹出请输入验证码  
+    }         
+    else if(inputCode != code ) { //若输入的验证码与产生的验证码不一致时  
+        alert("验证码输入错误！"); //则弹出验证码输入错误  
+        document.getElementById("input").value = "";//清空文本框 
+        window.onload;
+        createCode();//刷新验证码   
+    }         
+    else { //输入正确时  
+        location.href="login.html" //跳转到登录界面
+    }             
+}  
+
+
+    </script>
+</body>
+</html>

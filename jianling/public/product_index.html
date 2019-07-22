@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>剑灵商城首页</title>
+    <link rel="stylesheet" href="css/product/product_index.css">
+    <link rel="stylesheet" href="css/product/product_header.css">
+    <link rel="stylesheet" href="css/product/base.css">
+    <!--<link rel="stylesheet" href="css/product/bootstrap.css">-->
+    <link rel="stylesheet" href="css/product/product_footer.css">
+    <link rel="shortcut icon" href="fonts/favicon.ico" type="image/x-icon">
+    <script src="js/product/jquery-1.12.2.js"></script>
+    <script src="js/product/product_index.js"></script>
+   
+</head>
+<body>
+
+ <!-- 固定菜单栏 -->
+    <div class="fixednav">
+        <a href="#" class="link" title="我的订单">
+            <i class="comicon comicon-one bg"></i>
+            <span>我的<br>订单</span>
+        </a>
+        <a href="#" class="link" title="我的地址">
+            <i class="comicon comicon-tow bg"></i>
+            <span>我的<br>地址</span>
+        </a>
+        <a href="#" class="link mycart" title="我的购物车">
+            <i class="comicon comicon-three"></i>
+            <span>购<br>物<br>车</span>
+            <i class="comicon comicon-three-b">0</i>
+        </a>
+        <a href="#" class="link s-four" title="咨询">
+            <i class="comicon comicon-four bg"></i>
+            <span>咨询</span>
+        </a>
+        <!-- 返回顶部nav -->
+        <div class="topnav">
+            <a href="#">
+                <i class="comicon btn-top"></i>
+                <span>返回<br>顶部</span>
+            </a>
+        </div>
+    </div>
+    <!-- 顶部top -->
+    <div class="top">
+        <div class="w">
+            <div class="top-l fl"></div>
+            <div class="top-tow fl">
+                <ul>
+                    <li>
+                        剑灵周边商城上线啦,点击
+                        <a href="#">查看详情></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   <div class="nav">
+        <!-- 头部搜索导航header -->
+        <div class="header" id="ahead">
+            <div class="w">
+                <a href="#" class="header-logo fl"></a>
+                <a href="#" class="header-logotow fl"></a>
+                <a href="#" class="car fr">
+                    <i class="car-r"></i>
+                    <span>购物车</span>
+                </a>   
+                <a href="#" class="time fr">
+                        <i class="time-r"></i>
+                        <span>立即登录</span>
+                </a>
+                <div class="tet fr">
+                        <input type="text" class="search fr" placeholder="请输入想要找的宝贝">
+                        <a href="#" class="tex-s"></a>
+                </div>
+            </div>
+        </div>
+        <!-- tab菜单栏 -->
+        <div class="tab">
+            <div class="w">
+                <div class="tab-l fl">
+                    <a href="index.html">首页</a>
+                    <a href="#">新品上架</a>
+                    <a href="#">潮人服饰</a>
+                    <a href="#">数码广场</a>
+                    <a href="#">日常商品</a>
+                    <a href="#">礼包套餐</a>
+                </div>
+                <a href="#" class="fr all-class" id="tab-r">
+                    <span>全部商品分类</span>
+                    <i class="ico-comm i-arrbot"></i>
+                </a>
+            </div>
+            <!-- 子菜单 -->
+            <div class="tab-submenu" id="submenu">
+                <div class="mid">
+                    <ul class="submenu-ul">
+                        <li class="submenu-li">
+                            <a href="#" class="class-name">
+                                <img src="img/product/product_header_image/s-1.png" alt="">
+                                <p>珍藏礼包</p>
+                            </a>
+                            <ul class="class-list">
+                                    <li>
+                                        <a href="#">书包</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="#" class="class-name">
+                                    <img src="img/product/product_header_image/s-2.png" alt="">
+                                    <p>服装</p>
+                            </a>
+                            <ul class="class-list">
+                                    <li>
+                                        <a href="#">T恤</a>
+                                    </li>
+                                    <li>
+                                            <a href="#">衬衫</a>
+                                    </li>
+                                    <li>
+                                            <a href="#">风衣</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="#" class="class-name">
+                                    <img src="img/product/product_header_image/s-3.png" alt="">
+                                    <p>配饰</p>
+                            </a>
+                            <ul class="class-list">
+                                    <li>
+                                        <a href="#">帽子</a>
+                                    </li>
+                                    <li>
+                                            <a href="#">手表</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="#" class="class-name">
+                                    <img src="img/product/product_header_image/s-4.png" alt="">
+                                    <p>数码</p>
+                            </a>
+                            <ul class="class-list">
+                                <li>
+                                    <a href="#">手机</a>
+                                </li>
+                                <li>
+                                        <a href="#">电脑</a>
+                                </li>
+                                <li>
+                                        <a href="#">照相机</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="#" class="class-name">
+                                    <img src="img/product/product_header_image/s-5.png" alt="">
+                                    <p>日常</p>
+                            </a>
+                            <ul class="class-list">
+                                    <li>
+                                        <a href="#">鼠标垫</a>
+                                    </li>
+                                    <li>
+                                            <a href="#">保温杯</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="#" class="class-name">
+                                    <img src="img/product/product_header_image/s-6.png" alt="">
+                                    <p>定制手机壳</p>
+                            </a>
+                            <ul class="class-list">
+                                    <li>
+                                        <a href="#">镶金手机壳</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="#" class="class-name">
+                                <img src="img/product/product_header_image/s-7.png" alt="">
+                                <p>手办雕塑</p>
+                            </a>
+                            <ul class="class-list">
+                                    <li>
+                                        <a href="#">剑灵手办</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </div>
+    <!-- 轮播图player -->
+    <div class="player">
+        <ul id="imgBox">
+            <li><img src="img/product/product_index/b1.jpg" width="1349" height="368"></li>
+            <li><img src="img/product/product_index/b2.jpg" width="1349" height="368"></li>
+            <li><img src="img/product/product_index/b3.jpg" width="1349" height="368"></li>
+        </ul>
+        <ol id="dianBox">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <span class="arrow-l" id="arrowLeft"></span>
+        <span class="arrow-r" id="arrowRight"></span>
+    </div>
+    <!-- 广告banner -->
+    <div class="banner">
+        <div class="banner-b">
+            <div class="b-box fl">
+                <div class="box-t">
+                    <h3>限定好物</h3>
+                    <span>限定发售，好物必抢</span>
+                    <a href="#">
+                        <span>更多</span>
+                        <i class="ico-comm i-more"></i>
+                    </a>
+                </div>
+                <div class="box-c">
+                        <a href="#">
+                            <img src="img/product/product_index/b-box.jpg" alt="">
+                        </a>
+                </div>
+                <div class="box-b">
+                    <ul>
+                        <li>
+                            <a href="details.html">
+                                <img src="img/product/product_index/1-1.jpg" width="280" height="268">
+                                <div class="title">
+                                    <p class="title-t">【剑灵】 幻影狼神款T恤</p>
+                                    <p class="title-b">￥149</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/product/product_index/1-2.jpg" width="280" height="268">
+                                <div class="title">
+                                        <p class="title-t">【现货】火炮兰官方限定Q版手办</p>
+                                        <p class="title-b">￥168</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/product/product_index/1-3.jpg" width="280" height="268">
+                                <div class="title">
+                                        <p class="title-t">【520限定包邮】love女款保温杯</p>
+                                        <p class="title-b">￥158</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/product/product_index/1-4.jpg" width="280" height="268">
+                                <div class="title">
+                                        <p class="title-t">CHERRY樱桃火炮兰定制版</p>
+                                        <p class="title-b">￥1649</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="b-box fl">
+                    <div class="box-t">
+                        <h3>数码广场</h3>
+                        <span>购买你的专属游戏利器</span>
+                        <a href="#">
+                                <span>更多</span>
+                                <i class="ico-comm i-more"></i>
+                            </a>
+                        
+                    </div>
+                    <div class="box-c">
+                            <a href="#">
+                                <img src="img/product/product_index/b-box-2.png" alt="">
+                            </a>
+                    </div>
+                    <div class="box-b">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/2-1.jpg" width="280" height="268">
+                                    <div class="title">
+                                        <p class="title-t">剑灵无线充电器-火炮兰</p>
+                                        <p class="title-b">￥99</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/2-2.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">CHERRY樱桃秦义绝定制版</p>
+                                            <p class="title-b">￥1799</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/2-3.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">3D打印定制浮雕手机壳-火炮兰Q版</p>
+                                            <p class="title-b">￥49</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/2-4.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">新职业Q版枪手卡套</p>
+                                            <p class="title-b">￥38</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="b-box fl">
+                    <div class="box-t">
+                        <h3>新品上架</h3>
+                        <span>热卖新品，拥有你的独一无二</span>
+                        <a href="#">
+                                <span>更多</span>
+                                <i class="ico-comm i-more"></i>
+                            </a>
+                    </div>
+                    <div class="box-c">
+                            <a href="#">
+                                <img src="img/product/product_index/b-box-3.jpg" alt="">
+                            </a>
+                    </div>
+                    <div class="box-b">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/3-1.jpg" width="280" height="268">
+                                    <div class="title">
+                                        <p class="title-t">世界杯-剑灵两用钥匙扣套装</p>
+                                        <p class="title-b">￥25</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/3-2.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">召唤师款机械键盘背光键帽</p>
+                                            <p class="title-b">￥89</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/3-3.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">王婉茹&郑忠胜Q版大头马克杯</p>
+                                            <p class="title-b">￥22</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/3-4.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">【预售】秦义绝巧克力抱枕</p>
+                                            <p class="title-b">￥25</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="b-box fl">
+                    <div class="box-t">
+                        <h3>日常专区</h3>
+                        <span>购买品质好货，优享个性生活</span>
+                        <a href="#">
+                                <span>更多</span>
+                                <i class="ico-comm i-more"></i>
+                            </a>
+                    </div>
+                    <div class="box-c">
+                            <a href="#">
+                                <img src="img/product/product_index/b-box-4.jpg" alt="">
+                            </a>
+                    </div>
+                    <div class="box-b">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/4-1.jpg" width="280" height="268">
+                                    <div class="title">
+                                        <p class="title-t">王婉茹&郑忠胜Q版大头T恤</p>
+                                        <p class="title-b">￥109</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/4-2.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">王婉茹&郑忠胜Q版双肩背包</p>
+                                            <p class="title-b">￥183</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/4-3.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">【种族系列】灵族猫耳嘻哈帽</p>
+                                            <p class="title-b">￥73</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/product/product_index/4-4.jpg" width="280" height="268">
+                                    <div class="title">
+                                            <p class="title-t">【种族系列】龙族套头卫衣</p>
+                                            <p class="title-b">￥188</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="w contact-one">
+            <a href="#" class="contact-l">
+                <img src="img/product/product_foot/djc_logo.png" alt="">
+            </a>
+            <ul class="contact-c">
+                <li>
+                    <a href="#">
+                        <span class="c-one comm-top in"></span>购物指南
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="c-tow comm-top in"></span>配送方式
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="c-three comm-top in"></span>常见操作
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="c-four comm-top in"></span>售后服务
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="c-five comm-top in"></span>关于我们
+                    </a>
+                </li>
+            </ul>
+            <ul class="contact-r">
+                <li>
+                    <img src="img/product/product_foot/jcp_gzh.jpg" width="100" height="100">
+                    <p>聚诚品公众号</p>
+                </li>
+                <li>
+                    <img src="img/product/product_foot/djc_gzh.jpg" width="100" height="100">
+                    <p>道聚城公众号</p>
+                </li>
+                <li>
+                    <img src="img/product/product_foot/djc_app.png" width="100" height="100">
+                    <p>掌上道聚城</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部footer -->
+    <div class="footer">
+        <div class="f-box">
+            <p>
+                <a href="#" target="_blank">腾讯互动娱乐</a> | 
+                <a href="#" target="_blank">服务条款</a> | 
+                <a href="#" target="_blank">腾讯游戏隐私保护指引</a> | 
+                <a href="#" target="_blank">广告服务</a> | 
+                <a href="#" target="_blank">腾讯游戏招聘</a>  | 
+                <a href="#" target="_blank">腾讯游戏客服</a>  | 
+                <a href="#" target="_blank">游戏地图</a>  | 
+                <a href="#" target="_blank">成长守护平台</a> |
+                <a href="#" target="_blank">商务合作</a>  | 
+                <a href="#" target="_blank">网站导航</a> 
+            </p>
+            <p>
+                <a href="//www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2014]0633-233号</a>
+                &nbsp;增值电信业务经营许可证：
+                <a href="//www.qq.com/icp.shtml" target="_blank" rel="nofollow">粤B2-20090059</a>
+                &nbsp;
+                <a href="//www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+                &nbsp;违法和不良信息举报电话：0755-83767606
+            </p>
+            <p>COPYRIGHT  1998 – 2019 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p><a href="//www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司 版权所有</a></p>
+        </div>
+    </div>
+    <!-- 最底部白盒子 -->
+    <div class="end"></div>
+    
+</body>
+</html>

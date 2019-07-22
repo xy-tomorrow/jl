@@ -1,0 +1,119 @@
+/* <!-- 底部联系contact --> */
+.contact{
+  position: relative;
+  z-index: -10;
+  height: 233px;
+  background: #1b1b1b;
+  color: #777;
+  font-size: 12px;
+  line-height: 24px;
+}
+.contact-one{
+  height: 232px;
+  border-bottom: 1px solid #606060;
+  position: relative;
+  background: #1b1b1b;
+}
+.contact-one a{
+  color: #a8a8a8;
+}
+.contact-l{
+  width: 213px;
+  height: 64px;
+  position: absolute;
+  top: 51px;
+  left: 80px;
+}
+.contact-c{
+  float: left;
+  height: 135px;
+  width: 395px;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 50px 0 0 317px;
+  border-left: 1px solid #606060;
+  border-right: 1px solid #606060;
+}
+.contact-c li{
+  width: 118px;
+  height: 55px;
+  padding: 0 38px;
+  float: left;
+}
+.contact-c li a{
+  display: block;
+  width: 118px;
+  height: 30px;
+  color: #a8a8a8;
+}
+.contact-c li a:hover{
+  color:#fff;
+}
+.contact-c li .c-one{
+  background-position:0 -61px;
+}
+.contact-c li .c-tow{
+  background-position:-90px -61px;
+}
+.contact-c li .c-three{
+  background-position: -30px -61px;
+}
+.contact-c li .c-four{
+  background-position: -60px -61px;
+}
+.contact-c li .c-five{
+  background-position: -120px -61px;
+}
+.c-one,
+.c-tow,
+.c-three,
+.c-four,
+.c-five{
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+}
+.comm-top{
+  background: url(../../img/product/product_foot/comm-top.png) no-repeat;
+}
+.in{
+  display: inline-block;
+  vertical-align: top;
+}
+.contact-r {
+  float: left;
+  line-height: 62px;
+  /* width: 525px; */
+  padding: 50px 0 20px 33px;
+}
+.contact-r li{
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 38px;
+  text-align: center;
+}
+/* <!-- 底部footer --> */
+.footer{
+  height: 166px;
+  background: #1b1b1b;
+  /* overflow: hidden; */
+}
+.footer .f-box{
+  background: #1b1b1b;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 30px 0 40px;
+  text-align: center;
+  color: #777;
+}
+.f-box a{
+  color: #777;
+}
+.f-box a:hover{
+  color: #fff;
+}
+/* <!-- 最底部白盒子 --> */
+.end{
+  height: 27px;
+}
